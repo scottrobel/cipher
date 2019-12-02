@@ -1,0 +1,66 @@
+.ciper-header{
+    color: #DF8C95;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  .cipher-text{
+    position:fixed;
+    top:20%;
+    word-break: break-all;
+    width:20%;
+    font-size: 1.5em;
+  }
+  .original-text{
+    left: 10%;
+  }
+  .output-text{
+    right: 10%;
+  }
+  body{
+    background-image: url('./statue.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    color:white;
+  }
+  #title{
+    font-family: "Georgia", "backup", "serif";
+    position:absolute;
+    top: 0.7em;
+    left: 2em;
+    font-size: 3em;
+  }
+  .center-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .center-container > *{
+    display: block;
+    width: 20em;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #output{
+    color: blue;
+  }
+  img{
+    width: 20em;
+    border-radius: 10em;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+  }
+  @keyframes spin {
+    from {
+      transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+  }

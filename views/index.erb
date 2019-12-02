@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <header>
+    <h1 id = "title">Caesar Cipher</h1>
+  </header>
+  <body>
+    <% if defined?(output) %>
+      <div class="cipher-text original-text">
+        <h1 class = 'ciper-header'>Original Text</h1>
+        <p ><%= original %></p>
+      </div>
+      <div class="cipher-text output-text">
+        <h1 class = 'ciper-header'><%=cipher_type%> Text</h1>
+        <p><%= output %></p>
+      </div>
+    <% end %>
+    <div class = "center-container">
+      <div>
+        <img src="https://i.pinimg.com/564x/10/b3/d2/10b3d21a4714660514dd327361c13459.jpg"/>
+        <form method="post">
+          <div class="form-group">
+            <label for="Text" >Text</label>
+            <input class="form-control" id = "guess" type='text' name='text' required/>
+            <label for = "shift" >Shift</label>
+            <input class="form-control" id = "guess" type='number' name='shift' required/>
+          </div>
+          <input class="btn btn-primary" type='submit' name='encode' value='Encode' />          
+          <input class="btn btn-primary" type='submit' name='decode' value='Decode' />
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
